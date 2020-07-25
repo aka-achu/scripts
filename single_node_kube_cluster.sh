@@ -52,5 +52,5 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://docs.projectcalico.org/v3.14/manifests/calico.yaml
 
 
-# Disabling control plan isolation
+# Disabling control plane isolation
 kubectl taint nodes --all node-role.kubernetes.io/master-
